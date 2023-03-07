@@ -52,8 +52,8 @@
   1. you can designate a specific name for any particular field you are
      returning 
 
-     e.g
-     SELECT first_name || ' ' || last_name as full_name FROM user;
+    e.g
+    SELECT first_name || ' ' || last_name as full_name FROM user;
 
       a. Here we are concatenating first name and last name and assigning them
       to full_name 
@@ -92,8 +92,8 @@
   3. Built in function like LENGTH() which coutns the length of string, can be
      used in these byes of queriest 
 
-     e.g
-     SELECT first_name, LENGTH(first_name) len FROM user ORDER BY len DESC
+    e.g
+    SELECT first_name, LENGTH(first_name) len FROM user ORDER BY len DESC
 
       a. It returns list of first_names, the length of those names set in
       variable 'len' and then in a reverse order '100 to 0' by'name' length
@@ -103,8 +103,8 @@
      LAST' respectively. 
 
 
-     e.g 
-     SELECT age FROM user ORDER BY age DESC NULLS LAST
+    e.g 
+    SELECT age FROM user ORDER BY age DESC NULLS LAST
 
       a. returns list of age of all users, order in reverse by the age and null
       values are pushed to the end of the list

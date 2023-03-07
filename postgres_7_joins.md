@@ -12,7 +12,7 @@
   1. INNER JOIN is the most basic join of joining tables based on a set of
      queries 
 
-     e.g
+    e.g
     SELECT, a_fav_book, b_fav_book, a_Id, b_Id FROM users_a INNER JOIN users_b
     ON a_fav_book = b_fav_book
 

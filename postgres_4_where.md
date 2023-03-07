@@ -46,9 +46,9 @@
      characters and '%' in the back match anything that starts with those
      characters
      
-     e.g 
-     SELECT first_name, last_name FROM user WHERE first_name LIKE 'Ann%' AND 
-     last_name LIKE '%im'
+    e.g 
+    SELECT first_name, last_name FROM user WHERE first_name LIKE 'Ann%' AND 
+    last_name LIKE '%im'
 
       a. returns list of user's first_name and last_name but only for users's
       whose first_name starts with 'Ann' and last name ends with 'im'
@@ -56,8 +56,8 @@
   2. You can use '%' both front and behind to indicate that it simply needs to
      have the characters in the query
 
-     e.g 
-     SELECT first_name FROM user WHERE first_name LIKE '%er%' ORDER BY
+    e.g 
+    SELECT first_name FROM user WHERE first_name LIKE '%er%' ORDER BY
      first_name;
      
       a. Retrieves first_name list but first_name needs to have 'er' in it.
@@ -67,8 +67,8 @@
   3. '_' is represents any single character. Used in combination with 'LIKE' to
      match strings
 
-     e.g
-     SELECT first_name FROM user WHERE first_name like '_o_' 
+    e.g
+    SELECT first_name FROM user WHERE first_name like '_o_' 
 
       a. Single character followed by 'o' and followed by single character.
       Matches first_names like 'Bob' and 'Joe' but not 'Roland' because there
@@ -93,8 +93,8 @@
   1. If you want to ignore case sensitivety where uppercase or lowercase is
      returned as long as the letter matches, use 'ILIKE'
 
-     e.g
-     SELECT first_name FROM user WHERE first_name ILIKE 'an%'
+    e.g
+    SELECT first_name FROM user WHERE first_name ILIKE 'an%'
 
       a. Matches any name that starts with 'an' regardless of it is uppercase
       letters like the 'A' in 'Andy', 
@@ -105,8 +105,8 @@
      field. Note that the values that make up the edge of the range are also
      included
 
-     e.g
-     SELECT first_name FROM user WHERE LENGTH(first_name) BETWEEN 3 AND 5
+    e.g
+    SELECT first_name FROM user WHERE LENGTH(first_name) BETWEEN 3 AND 5
 
       a. returns list of users where their first_name length is from 3 to 5
       which also includes names that are 3 to 5 characters long. 
@@ -122,8 +122,8 @@
   3. You can combine not to indicate you are matching outside of the range
      values 
 
-     e.g
-     SELECT age FROM user WHERE age NOT BETWEEN 18 AND 30 
+    e.g
+    SELECT age FROM user WHERE age NOT BETWEEN 18 AND 30 
 
 # keyword NULL
 
@@ -138,8 +138,8 @@
   2. You can also use 'NOT NULL' to enforce returning rows where field is given
      a values 
 
-     e.g 
-      SELECT phone FROM contacts WHERE phone IS NOT NULL;
+    e.g 
+     SELECT phone FROM contacts WHERE phone IS NOT NULL;
 
       a. retrieves a list of phone numbers from contacts table but only rows
       where phone number has a value
