@@ -38,6 +38,3 @@
 
   1. Basically checks if query matches and updates a matach query or creates a
      new row if no match on existing values
-
-  e.g 
-  INSERT 

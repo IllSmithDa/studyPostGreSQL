@@ -65,13 +65,11 @@
   
   3. The number and the order of the columns in the select list of both queries
      must be the same.
+
+    e.g
+    SELECT a_fav_book FROM users_a UNION b_fav_book FROM users_b
   
-  4. 
-
-  e.g
-  SELECT a_fav_book FROM users_a UNION b_fav_book FROM users_b
-
-    a. combines result of both queries together
+      a. combines result of both queries together
 
 # INTERSECT
 

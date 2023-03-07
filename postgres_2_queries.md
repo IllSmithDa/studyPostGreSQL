@@ -34,13 +34,13 @@
     e.g
     SELECT first_name || ' ' || last_name, email FROM user;
 
-      a. returns a list of users with a combined first and last name alont with email
+      a. returns a list of users with a combined first and last name along with email
 
       b. sample entry will look list this 'John Dode', jon@john.com
 
       c. Combined first and lastname in entry
 
-  6. You can perform expressions when neccesary
+  6. You can perform mathematical expressions when neccesary
 
     e.g
     SELECT age * 3 FROM user;
@@ -125,12 +125,14 @@
      fields are the same, it will return but if all fields that are selected are
      the same, it will skip that entry
 
-      e.g SELECT DISTINCT favorite_food, favorite_color FROM user;
+      e.g 
+      SELECT DISTINCT favorite_food, favorite_color FROM user;
 
         a. both favorite_food and favorite_color has to be repeated by same
         entry before it is skipped
 
-      e.g SELECT DISTINCT ON (favorite_color) favorite_color, favorite_food FROM
+      e.g 
+      SELECT DISTINCT ON (favorite_color) favorite_color, favorite_food FROM
       user ORDER BY favorite_color
 
         a. Returns two columns but but only for fields which the value favorite
