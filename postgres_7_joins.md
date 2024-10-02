@@ -18,7 +18,7 @@
 
       a. INNER JOIN creates a new row that contains columns from both tables but
       only entries that column 'a_fav_book' value from 'users_a' and
-      'b_fav_book' fromt 'users_b'. value of a_Id and b_Id do not need to match.
+      'b_fav_book' from 'users_b'. value of a_Id and b_Id do not need to match.
 
 # LEFT, RIGHT JOIN 
 
